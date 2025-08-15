@@ -5,6 +5,8 @@ public class StartBot : MonoBehaviour
 {
     [SerializeField]
     private GhostController _botActive;
+    [SerializeField]
+    private FinishController _botFinished;
 
     [Inject]
     public void Construct(GhostController botActive)
@@ -15,5 +17,6 @@ public class StartBot : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         _botActive.gameObject.SetActive(true);
+        _botFinished.ChangeCountFinish();
     }
 }

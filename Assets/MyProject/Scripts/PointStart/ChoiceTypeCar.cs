@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-public class StartGame : MonoBehaviour
+public class ChoiceTypeCar : MonoBehaviour
 {
     [SerializeField]
     private Button[] _buttonStart;
